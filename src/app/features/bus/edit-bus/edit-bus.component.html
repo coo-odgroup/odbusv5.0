@@ -1,0 +1,725 @@
+<!-- Breadcrumb -->
+    <div class="breadcrumb-bar breadcrumb-bg-07 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <h2 class="breadcrumb-title mb-2">Edit Bus</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center mb-0">
+                            <li class="breadcrumb-item"><a [routerLink]="routes.index"><i class="isax isax-home5"></i></a></li>
+                            <li class="breadcrumb-item">Bus</li>
+                            <li class="breadcrumb-item active" aria-current="page">Edit Bus</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+
+    <!-- Page Wrapper -->
+    <div class="content">
+        <div class="container">
+            <!-- Add New Bus -->
+            <div class="row custom-time">
+
+                <!-- Sidebar -->
+                <div class="col-lg-3 theiaStickySidebar">
+                    <div class="card border-0 mb-4 mb-lg-0 theiaStickySidebar">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="mb-3">Edit Bus</h5>
+                                <ul class="add-tab-list">
+                                    <li *ngFor="let tab of tabs">
+                                        <a 
+                                        href="javascript:void(0);" 
+                                        [class.active]="activeTab === tab.id"
+                                        (click)="scrollTo(tab.id)"
+                                        >
+                                          {{ tab.label }}
+                                        </a>
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Sidebar -->
+
+                <div class="col-lg-9">
+                    <form>
+                        <div class="card shadow-none" id="basic_info">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h6 class="fs-18">Basic Info</h6>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Bus Name</label>
+                                            <input type="text" class="form-control" value="Volvo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Bus Number</label>
+                                            <input type="text" class="form-control" value="8765">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Bus Type</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Seater">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Seater</mat-option>
+                                                <mat-option value="1">Sleeper</mat-option>
+                                                <mat-option value="1">Semi Sleeper</mat-option>
+                                                <mat-option value="1">AC Sleeper</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Launched On</label>
+                                            <div class="input-icon-end position-relative">
+                                                <input type="text" class="form-control datetimepicker" bsDatepicker placeholder="dd/mm/yyyy">
+                                                <span class="input-icon-addon">
+                                                    <i class="isax isax-calendar"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="specifications">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h6 class="fs-18">Specifications</h6>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Body Type</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Seater">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Seater</mat-option>
+                                                <mat-option value="1">Sleeper</mat-option>
+                                                <mat-option value="1">Semi Sleeper</mat-option>
+                                                <mat-option value="1">AC Sleeper</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Fuel Type</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Petrol">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Petrol</mat-option>
+                                                <mat-option value="1">Diesal</mat-option>
+                                                <mat-option value="1">Electric</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Mileage (km/l)</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">AC Type</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Central air conditioners">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Central air conditioners</mat-option>
+                                                <mat-option value="1">Ductless mini-split systems</mat-option>
+                                                <mat-option value="1">Window units</mat-option>
+                                                <mat-option value="1">Portable units</mat-option>
+                                                <mat-option value="1">Floor-standing units</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Doors</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Inward-Swinging Doors">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Plug Doors</mat-option>
+                                                <mat-option value="1">Swing-Out Doors</mat-option>
+                                                <mat-option value="1">Inward-Swinging Doors</mat-option>
+                                                <mat-option value="1">Sliding Doors</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Seating Capacity</label>
+                                            <input type="text" class="form-control" value="45">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Passenger Capacity</label>
+                                            <input type="text" class="form-control" value="45">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Length (ft)</label>
+                                            <input type="text" class="form-control" value="40">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Width (ft)</label>
+                                            <input type="text" class="form-control" value="8-9">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Height (ft)</label>
+                                            <input type="text" class="form-control" value="10">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Max Speed (km/h)</label>
+                                            <input type="text" class="form-control" value="190">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Engine Power (HP)</label>
+                                            <input type="text" class="form-control" value="900">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Steering Type</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Four-Wheel Steering">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Manual Steering</mat-option>
+                                                <mat-option value="1">Power-Assisted Steering</mat-option>
+                                                <mat-option value="1">Four-Wheel Steering</mat-option>
+                                                <mat-option value="1">Articulated Steering</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Brakes</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Air-Hydraulic Brakes">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Mechanical Brakes</mat-option>
+                                                <mat-option value="1">Hydraulic Brakes</mat-option>
+                                                <mat-option value="1">Air-Hydraulic Brakes</mat-option>
+                                                <mat-option value="1">Parking / Emergency Brakes</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Access</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Step-Entry Access">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Front-Entry Access</mat-option>
+                                                <mat-option value="1">Dual-Entry Access</mat-option>
+                                                <mat-option value="1">Multiple-Entry Access</mat-option>
+                                                <mat-option value="1">Step-Entry Access</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="departure">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="fs-18">Arrival & Departure</h5>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="row">
+                                    <div class="col-xxl col-xl-6 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Arrival City</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Boston">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Newyork</mat-option>
+                                                <mat-option value="1">Boston</mat-option>
+                                                <mat-option value="1">Northern Virginia</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl col-xl-6 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Arrival Time</label>
+                                            <div class="input-icon-end position-relative">
+                                                <p-datepicker
+                                                                inputId="calendar-timeonly"
+                                                                [(ngModel)]="time1"
+                                                                name="time1"
+                                                                [timeOnly]="true"
+                                                                [hourFormat]="'12'"
+                                                                placeholder="-- : -- : --"
+                                                                class="form-control pb-0">
+                                                              </p-datepicker>
+                                                <span class="input-icon-addon">
+                                                    <i class="ti ti-clock-hour-10 text-gray-7"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl col-xl-6 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Departure City</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Los Angeles">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Northern Virginia</mat-option>
+                                                <mat-option value="1">Los Angeles</mat-option>
+                                                <mat-option value="1">Newyork</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl col-xl-6 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Departure Time</label>
+                                            <div class="input-icon-end position-relative">
+                                                 <p-datepicker
+                                                                inputId="calendar-timeonly"
+                                                                [(ngModel)]="time"
+                                                                name="time"
+                                                                [timeOnly]="true"
+                                                                [hourFormat]="'12'"
+                                                                placeholder="-- : -- : --"
+                                                                class="form-control pb-0">
+                                                              </p-datepicker>
+                                                <span class="input-icon-addon">
+                                                    <i class="ti ti-clock-hour-10 text-gray-7"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="dropoff">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="fs-18">Pickup & Dropoff</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xxl col-xl-6 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Type of Location</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Boston">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Newyork</mat-option>
+                                                <mat-option value="1">Boston</mat-option>
+                                                <mat-option value="1">Northern Virginia</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Location</label>
+                                            <input type="text" class="form-control" value="Newyork">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Time</label>
+                                             <div class="input-icon-end position-relative">
+                                                <p-datepicker
+                                                                inputId="calendar-timeonly"
+                                                                [(ngModel)]="time2"
+                                                                name="time2"
+                                                                [timeOnly]="true"
+                                                                [hourFormat]="'12'"
+                                                                placeholder="-- : -- : --"
+                                                                class="form-control pb-0">
+                                                              </p-datepicker>
+                                                <span class="input-icon-addon">
+                                                    <i class="ti ti-clock-hour-10 text-gray-7"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm add-service"><i class="isax isax-add-circle me-1"></i>Add New</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="routes">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="fs-18">Routes</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xxl col-xl-6 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">City</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Boston">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">Newyork</mat-option>
+                                                <mat-option value="1">Boston</mat-option>
+                                                <mat-option value="1">Northern Virginia</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Location</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Time</label>
+                                             <div class="input-icon-end position-relative">
+                                                <input type="text" class="form-control timepicker" placeholder="-- : -- : -- ">
+                                                <span class="input-icon-addon">
+                                                    <i class="ti ti-clock-hour-10 text-gray-7"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm add-service"><i class="isax isax-add-circle me-1"></i>Add New</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="description">
+                            <div class="card-header">
+                                <h5 class="fs-18">Description</h5>
+                            </div>
+                            <div class="card-body text-editor">
+                                <div class="snow-editor"></div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="amenities">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="fs-18">Bus Amenities</h5>
+                                </div>
+                            </div>
+                            <div class="card-body pb-2">
+                                <div class="row gy-2">
+                                    <div class="col-lg-4 col-md-6">
+                                        <h6 class="fs-16 mb-2">Comfort & Facilities</h6>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-01">
+                                            <label class="form-check-label ms-2" for="service-01">
+                                                Wi-Fi
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-02">
+                                            <label class="form-check-label ms-2" for="service-02">
+                                                Charging Points
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-03">
+                                            <label class="form-check-label ms-2" for="service-03">
+                                                Reading Lights
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-04">
+                                            <label class="form-check-label ms-2" for="service-04">
+                                                Recliner Seats
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-05">
+                                            <label class="form-check-label ms-2" for="service-05">
+                                                Blankets & Pillows
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <h6 class="fs-16 mb-2">Entertainment</h6>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-07">
+                                            <label class="form-check-label ms-2" for="service-07">
+                                                TV
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-08">
+                                            <label class="form-check-label ms-2" for="service-08">
+                                                Music System
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-09">
+                                            <label class="form-check-label ms-2" for="service-09">
+                                                Movie Screens
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <h6 class="fs-16 mb-2">Premium Options</h6>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-013">
+                                            <label class="form-check-label ms-2" for="service-013">
+                                                Onboard Restroom
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-014">
+                                            <label class="form-check-label ms-2" for="service-014">
+                                                Personal TV
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-015">
+                                            <label class="form-check-label ms-2" for="service-015">
+                                                Lounge Area
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center ps-0 mb-2">
+                                            <input class="form-check-input ms-0 mt-0" type="checkbox" id="service-016">
+                                            <label class="form-check-label ms-2" for="service-016">
+                                                Sleeper Berths
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="location">
+                            <div class="card-header">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="fs-18">Location</h5>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="row">
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Country</label>
+                                            <mat-select class="select custom-mat-select" placeholder="Canada">
+                                                <mat-option value="1">Select</mat-option>
+                                                <mat-option value="1">United States</mat-option>
+                                                <mat-option value="1">Canada</mat-option>
+                                                <mat-option value="1">United Kingdom</mat-option>
+                                            </mat-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">City</label>
+                                            <input type="text" class="form-control" value="Oxford Street">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">State</label>
+                                            <input type="text" class="form-control" value="London">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Zip Code</label>
+                                            <input type="text" class="form-control" value="145">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Address</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Address 1</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="faq">
+                            <div class="card-header">
+                                <h5 class="fs-18">FAQ</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="card shadow-none mb-3">
+                                    <div class="card-body px-3 py-2">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                            <h6><a href="javascript:void(0);">Does offer free cancellation for a full refund?</a></h6>
+                                            <div class="d-flex align-items-center">
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_faq" class="rounded-edit d-flex align-items-center justify-content-center me-2">
+                                                    <i class="isax isax-edit-2"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="trash-icon d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                                                    <i class="isax isax-trash text-danger"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card shadow-none mb-3">
+                                    <div class="card-body px-3 py-2">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                                            <h6><a href="javascript:void(0);">Is there a pool?</a></h6>
+                                            <div class="d-flex align-items-center">
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_faq" class="rounded-edit d-flex align-items-center justify-content-center me-2">
+                                                    <i class="isax isax-edit-2"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="trash-icon d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#delete_modal">
+                                                    <i class="isax isax-trash text-danger"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#add_faq">
+                                        <i class="isax isax-add-circle me-1"></i>Add New
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none" id="gallery">
+                            <div class="card-header">
+                                <h5 class="fs-18">Gallery</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="file-upload drag-file w-100 d-flex align-items-center justify-content-center flex-column mb-2">
+                                    <span class="upload-img d-block mb-2"><i class="isax isax-document-upload fs-24"></i></span>
+                                    <h6 class="mb-1">Upload Gallery Images</h6>
+                                    <p class="mb-0">Upload Feature Image First, Image size should below 5MB</p>
+                                    <input type="file" accept="video/image">
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a href="javascript:void(0);" class="gallery-upload-img me-2" [ngStyle]="{'display':isDelete[0]?'none':'block'}">
+                                        <img src="assets/img/uploads/upload-01.jpg" alt="Img">
+                                        <span class="trash-icon d-flex align-items-center justify-content-center text-danger gallery-trash" (click)="onDelete(0)"><i class="isax isax-trash"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="gallery-upload-img me-2" [ngStyle]="{'display':isDelete[1]?'none':'block'}">
+                                        <img src="assets/img/uploads/upload-02.jpg" alt="Img">
+                                        <span class="trash-icon d-flex align-items-center justify-content-center text-danger gallery-trash" (click)="onDelete(1)"><i class="isax isax-trash"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="gallery-upload-img me-2" [ngStyle]="{'display':isDelete[2]?'none':'block'}">
+                                        <img src="assets/img/uploads/upload-03.jpg" alt="Img">
+                                        <span class="trash-icon d-flex align-items-center justify-content-center text-danger gallery-trash" (click)="onDelete(2)"><i class="isax isax-trash"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="gallery-upload-img me-2" [ngStyle]="{'display':isDelete[3]?'none':'block'}">
+                                        <img src="assets/img/uploads/upload-04.jpg" alt="Img">
+                                        <span class="trash-icon d-flex align-items-center justify-content-center text-danger gallery-trash" (click)="onDelete(3)"><i class="isax isax-trash"></i></span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="gallery-upload-img me-2" [ngStyle]="{'display':isDelete[4]?'none':'block'}">
+                                        <img src="assets/img/uploads/upload-05.jpg" alt="Img">
+                                        <span class="trash-icon d-flex align-items-center justify-content-center text-danger gallery-trash" (click)="onDelete(4)"><i class="isax isax-trash"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button type="button" class="btn btn-light me-2">Reset</button>
+                            <button type="submit" class="btn btn-primary">Add New Bus</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /Add New Bus -->
+        </div>
+    </div>
+    <!-- /Page Wrapper -->
+
+    <!-- Filter Modal -->
+    <div class="modal fade" id="add_faq" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Add New FAQ</h5>
+                    <button data-bs-dismiss="modal" aria-label="close" class="btn-close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Question <span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div>
+                            <label class="form-label">Answer <span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex align-items-center justify-content-end m-0">
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-sm btn-light me-2">Cancel</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Add FAQ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Filter Modal -->    
+
+    <!-- Faq Modal -->
+    <div class="modal fade" id="edit_faq" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Edit FAQ</h5>
+                    <button data-bs-dismiss="modal" aria-label="close" class="btn-close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Question <span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control" value="Does offer free cancellation for a full refund?">
+                        </div>
+                        <div>
+                            <label class="form-label">Answer <span class="text-danger"> *</span></label>
+                            <input type="text" class="form-control" value="yes">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex align-items-center justify-content-end m-0">
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-sm btn-light me-2">Cancel</button>
+                            <button type="submit" class="btn btn-sm btn-primary">Save FAQ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Faq Modal -->
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="delete_modal">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="text-center">
+                            <h5 class="mb-3">Confirm Delete</h5>
+                            <p class="mb-3">Are you sure you want to delete this item?</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">No</a>
+                                <button type="submit" class="btn btn-primary">Yes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Delete Modal -->

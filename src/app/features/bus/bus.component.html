@@ -1,0 +1,298 @@
+<router-outlet/>
+
+    <!-- start offcanvas -->
+	<div class="offcanvas offcanvas-offset offcanvas-end custom-offcanvas" tabindex="-1"  id="bus_details">
+		<div class="offcanvas-header d-block border-bottom">
+			<div class="d-flex align-items-center justify-content-between">
+			<h4 class="offcanvas-title fs-20 fw-bold">Details</h4>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">Close</button></div>
+		</div>
+		<div class="offcanvas-body">
+			<div class="filter-items">
+				<div class="filter-body">
+					<div>
+
+                        <div class="offcanvas-date mb-3">
+                            <p class="border">08:35 AM</p>
+                            <span class="way-icon badge badge-dark rounded-pill translate-middle border-0">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </span>
+                            <p class="border">4:55 PM</p>
+                        </div>
+
+                        <div class="offcanvas-item d-flex align-items-center justify-content-center mb-3 pb-3 border-bottom gap-3">
+                            <p class="d-flex align-items-center mb-0 gap-1"> <i class="isax isax-clock"></i> 07h :15m</p>
+                            <i class="fa-solid fa-circle fs-7 text-dark"></i>
+                            <p>Bharat Benz (Sleeper)</p>
+                        </div>
+
+                        <!-- Tab Item -->
+                        <ul class="nav" role="tablist">
+                            <li>
+                                <a href="javascript:void(0);" class="nav-link active" data-bs-toggle="tab" data-bs-target="#add_flight" aria-selected="true" role="tab">
+                                    Pick-up
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="nav-link" data-bs-toggle="tab" data-bs-target="#add_cabin" aria-selected="false" role="tab" tabindex="-1">
+                                    Drop-Off
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- Add New Flight -->
+                            <div class="tab-pane fade active show" id="add_flight" role="tabpanel">
+                                <h6 class="mb-3 content-item">Select pick-up points in Newyork (5)</h6>
+                                <div class="card">
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>Times Square (Broadway & 47th St.)</h6>
+                                            <p>8:45 AM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="one" value="one" checked>
+                                            <label class="form-check-label fs-14 ms-2" for="one"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>Port Authority Bus Terminal</h6>
+                                            <p>10:30 AM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="two" value="two">
+                                            <label class="form-check-label fs-14 ms-2" for="two"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>Central Park South (Columbus Circle)</h6>
+                                            <p>12:15 PM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="three" value="three">
+                                            <label class="form-check-label fs-14 ms-2" for="three"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>Penn Station (8th Ave & 31st St.)</h6>
+                                            <p>2:00 PM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="four" value="four">
+                                            <label class="form-check-label fs-14 ms-2" for="four"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="item">
+                                            <h6>Battery Park (State St. & Battery Pl.)</h6>
+                                            <p>4:45 PM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="five" value="five">
+                                            <label class="form-check-label fs-14 ms-2" for="five"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add New Cabin -->
+                            <div class="tab-pane fade" id="add_cabin" role="tabpanel">
+                                <h6 class="mb-3 content-item">Select Drop-Off points in LasVegas (5)</h6>
+                                <div class="card">
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>Bellagio Hotel & Casino</h6>
+                                            <p>8:45 AM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="six" value="six">
+                                            <label class="form-check-label fs-14 ms-2" for="six"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>Fremont Street Experience</h6>
+                                            <p>10:30 AM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="seven" value="seven">
+                                            <label class="form-check-label fs-14 ms-2" for="seven"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>LINQ Promenade</h6>
+                                            <p>12:15 PM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="eight" value="eight">
+                                            <label class="form-check-label fs-14 ms-2" for="eight"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body border-bottom">
+                                        <div class="item">
+                                            <h6>MGM Hotel & Casino (South Strip)</h6>
+                                            <p>2:00 PM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="none" value="none">
+                                            <label class="form-check-label fs-14 ms-2" for="none"></label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="item">
+                                            <h6>Red Rock Canyon Visitor Center</h6>
+                                            <p>4:45 PM</p>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center justify-content-end">
+                                            <input class="form-check-input mt-0" type="radio" name="Radio" id="ten" value="ten">
+                                            <label class="form-check-label fs-14 ms-2" for="ten"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-footer d-flex align-items-center justify-content-between gap-2 border-top">
+			<a href="javascript:void(0);" class="btn btn-light btn-md w-100 rounded-pill">Reset </a>
+			<a href="javascript:void(0);" class="btn btn-primary btn-md w-100 rounded-pill">Continue </a>
+		</div>
+	</div>
+	<!-- end offcanvas -->
+
+    <!-- start offcanvas -->
+	<div class="offcanvas offcanvas-offset offcanvas-end custom-offcanvas" tabindex="-1"  id="routes_details">
+		<div class="offcanvas-header d-block border-bottom">
+			<div class="d-flex align-items-center justify-content-between">
+			<h4 class="offcanvas-title fs-20 fw-bold">Route</h4>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">Close</button></div>
+		</div>
+		<div class="offcanvas-body">
+			<div class="filter-items">
+				<div class="filter-body">
+					<div>
+                        <div class="offcanvas-date mb-3">
+                            <p class="border">30 Thu 2025 - 08:35 AM</p>
+                        </div>
+                        <div class="offcanvas-item d-flex align-items-center justify-content-center mb-3 pb-3 border-bottom gap-3">
+                            <p class="d-flex align-items-center mb-0 gap-1"> <i class="isax isax-clock"></i> 07h :15m</p>
+                            <i class="fa-solid fa-circle fs-7 text-dark"></i>
+                            <p>Bharat Benz (Sleeper)</p>
+                        </div>
+
+                        <!-- location Item -->
+                        <div class="location-items border-0">
+                            <p class="border mb-3 loc-item">Newyork - 08:35 AM</p>
+                            <div class="accordion custom-accordion mb-3">
+                                <div class="accordion-item p-0 border-0" id="field_three">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#accordion_collapse_one" aria-expanded="false">
+                                            04 Stops
+                                        </button>
+                                    </div>
+                                    <div id="accordion_collapse_one" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <p class="mb-3">Philadelphia - 10:00 AM </p>
+                                            <p class="mb-3">Columbus - 12:30 PM </p>
+                                            <p class="mb-3">Denver - 02:15 PM  </p>
+                                            <p>Cedar City - 03:40 PM </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="border loc-item">Las Vegas - 4:55 PM</p>
+                        </div>
+
+                        <div class="facilities-item card shadow-none">
+                            <div class="card-body d-flex align-items-center gap-2">
+                                <h6 class="fs-14 fw-medium">Facillities : </h6>
+                                <div class="d-flex align-items-center gap-2">
+                                    <a href="javascript:void(0);"><i class="isax isax-home-wifi4"></i></a>
+                                    <a href="javascript:void(0);"><i class="isax isax-scissor-15"></i></a>
+                                    <a href="javascript:void(0);"><i class="isax isax-profile-2user5"></i></a>
+                                    <a href="javascript:void(0);"><i class="isax isax-wind-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-footer d-flex align-items-center justify-content-between gap-2 border-top">
+			<a href="javascript:void(0);" class="btn btn-primary btn-md w-100 rounded-pill">Continue </a>
+		</div>
+	</div>
+	<!-- end offcanvas -->
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="add_review">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h5>Write a Review</h5>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x fs-16"></i>
+                    </a>
+                </div>
+                <form>
+                    <div class="modal-body pb-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Rating <span class="text-danger">*</span></label>
+                                    <div class="selection-wrap">
+                                        <div class="d-inline-block">
+                                            <div class="rating-selction">
+                                                <input type="radio" name="rating" value="5" id="rating5">
+                                                <label for="rating5"><i class="fa-solid fa-star"></i></label>
+                                                <input type="radio" name="rating" value="4" id="rating4">
+                                                <label for="rating4"><i class="fa-solid fa-star"></i></label>
+                                                <input type="radio" name="rating" value="3" id="rating3">
+                                                <label for="rating3"><i class="fa-solid fa-star"></i></label>
+                                                <input type="radio" name="rating" value="2" id="rating2">
+                                                <label for="rating2"><i class="fa-solid fa-star"></i></label>
+                                                <input type="radio" name="rating" value="1" id="rating1">
+                                                <label for="rating1"><i class="fa-solid fa-star"></i></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Write Your Review <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex align-items-center justify-content-end m-0">
+                            <button type="submit" class="btn btn-primary btn-md"><i class="isax isax-edit-2 me-1"></i>Submit Review</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Review Modal -->
