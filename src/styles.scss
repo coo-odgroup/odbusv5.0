@@ -1363,3 +1363,209 @@ color: #ffffff !important;
         background-color: #17222C;
         border: 1px solid #17222C;
   }
+
+// SEAT LAYOUT
+
+  /* MAIN CARD */
+.seat-main-card {
+    border-radius: 10px;
+    padding: 9px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0px 4px 24px 0px rgba(194, 194, 194, 0.25);
+    margin-bottom: 30px;
+}
+
+/* LEFT SIDE */
+.seat-left {
+    flex:0 0 65%; 
+}
+
+.driver-section{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:6px;
+    padding-right:20px;
+}
+
+.driver-section i{
+    font-size:22px;
+    color:#6c7aa1;
+}
+
+/* RIGHT SIDE */
+.seat-right {
+    flex:0 0 35%;
+}
+
+/*  BUS LAYOUT  */
+.bus-layout {
+    border-radius: 10px;
+    display: table;
+}
+
+/* BERTH ROW */
+.berth-row {
+    display:flex;
+    gap:10px;
+    margin:6px 0;
+}
+
+/* LABEL */
+.berth-label {
+    width:35px;
+    font-size:12px;
+    font-weight:600;
+    color:#1b2155;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* GRID */
+.layout-box {
+    display:grid;
+    grid-template-columns:repeat(12,40px);
+    gap:6px;
+    background:#f6f6f2;
+    padding:10px;
+    border-radius:10px;
+}
+
+.layout-box2 {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 8px;
+    background: #f6f6f2;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.seat,
+.sleeper {
+    height: 36px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Default */
+.seat {
+    background-image: url("assets/icons/seat_png/seat_layout_2.png");
+}
+
+.sleeper {
+    grid-column: span 2;
+    background-image: url("assets/icons/seat_png/sleeper_layout.png");
+}
+
+
+
+/* EMPTY */
+.empty {
+    height: 36px;
+}
+
+
+/* RIGHT INFO CARD */
+.booking-info-card {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    height: 470px;
+}
+
+.booking-bottom{
+    border-top:1px solid #eee;
+    padding-top:10px;
+}
+
+.boarding-area {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.boarding-area::-webkit-scrollbar{
+    width:5px;
+    flex-grow:1;
+}
+
+.boarding-area::-webkit-scrollbar-thumb{
+    background:#ccc;
+    border-radius:10px;
+}
+
+/* TAB HEADER FIX */
+.tab-buttons{
+    display:flex;
+    position: relative;
+    margin:-16px -16px 16px -16px; /* attach to top border */
+    border-bottom:1px solid #eee;
+}
+
+.tab-buttons button{
+    flex:1;
+    border:none;
+    padding:12px;
+    font-size:13px;
+    background:#e6e6e6;
+    cursor:pointer;
+}
+
+/* rounded corners with card */
+.tab-buttons button:first-child{
+    border-top-left-radius:14px;
+}
+
+.tab-buttons button:last-child{
+    border-top-right-radius:14px;
+}
+
+/* active tab */
+.tab-buttons button.active{
+    background:#f0c92f;
+    font-weight:600;
+}
+
+/* POINT LIST */
+.point {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.point input {
+    margin-top: 4px;
+}
+
+.bottom-section{
+    margin-top:auto;
+}
+
+/* SUMMARY */
+.summary p {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+    width: 100%;
+    background: #f0c92f;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
