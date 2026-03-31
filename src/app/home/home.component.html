@@ -1,0 +1,1164 @@
+<!-- <app-top-app-ad></app-top-app-ad> -->
+<!-- Hero Section -->
+<app-home-top-banner></app-home-top-banner>
+<!-- /Hero Section -->
+
+<!-- Popular Section -->
+<section class="section popular-sec-seven">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="mb-2 line-icon">Popular Destinations</h2>
+            <p class="sub-title">Explore our most traveled destinations around the World</p>
+        </div>
+
+        <!-- start row -->
+        <div
+            class="row row-gap-4 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1 row-margin justify-content-center">
+            <div class="col">
+                <div class="location-item mb-0">
+                    <div class="location-img">
+                        <a [routerLink]="routes.busList" class="location-img">
+                            <img src="assets/img/bus/popular-img-01.jpg" alt="img" class="img-fluid w-100">
+                        </a>
+                        <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
+                    </div>
+                    <div class="location-info text-center">
+                        <div>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Belgium</a></h5>
+                            <p class="fs-14">49 Buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col">
+                <div class="location-item mb-0">
+                    <div class="location-img">
+                        <a [routerLink]="routes.busList" class="location-img">
+                            <img src="assets/img/bus/popular-img-02.jpg" alt="img" class="img-fluid w-100">
+                        </a>
+                        <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
+                    </div>
+                    <div class="location-info text-center">
+                        <div>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Brazil</a></h5>
+                            <p class="fs-14">36 Buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col">
+                <div class="location-item mb-0">
+                    <div class="location-img">
+                        <a [routerLink]="routes.busList" class="location-img">
+                            <img src="assets/img/bus/popular-img-03.jpg" alt="img" class="img-fluid w-100">
+                        </a>
+                        <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
+                    </div>
+                    <div class="location-info text-center">
+                        <div>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Mexico</a></h5>
+                            <p class="fs-14">49 Buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col">
+                <div class="location-item mb-0">
+                    <div class="location-img">
+                        <a [routerLink]="routes.busList" class="location-img">
+                            <img src="assets/img/bus/popular-img-04.jpg" alt="img" class="img-fluid w-100">
+                        </a>
+                        <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
+                    </div>
+                    <div class="location-info text-center">
+                        <div>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Greece</a></h5>
+                            <p class="fs-14">18 Buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col">
+                <div class="location-item mb-0">
+                    <div class="location-img">
+                        <a [routerLink]="routes.busList" class="location-img">
+                            <img src="assets/img/bus/popular-img-05.jpg" alt="img" class="img-fluid w-100">
+                        </a>
+                        <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
+                    </div>
+                    <div class="location-info text-center">
+                        <div>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Netherlands</a></h5>
+                            <p class="fs-14">40 Buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+        </div>
+        <!-- end row -->
+
+        <div class="text-center view-all wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <a [routerLink]="routes.busList" class="btn btn-dark">View All Destinations<i
+                    class="isax isax-arrow-right-3 ms-2"></i></a>
+        </div>
+    </div>
+</section>
+<!-- /Popular Section -->
+
+<!-- Statistics Section -->
+<section class="section stat-sec-seven pt-0">
+    <div class="container">
+        <!-- start row -->
+        <div class="row justify-content-center row-gap-3">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="stat-item">
+                    <h2><span class="counter animated fadeInDownBig" [countUp]="88"
+                            [options]="{ enableScrollSpy: true }">88</span></h2>
+                    <h6>Happy Customers</h6>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="stat-item">
+                    <h2><span class="counter animated fadeInDownBig" [countUp]="5600"
+                            [options]="{ enableScrollSpy: true }">5600</span>+</h2>
+                    <h6>Successfully Completed Tours</h6>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="stat-item">
+                    <h2><span class="counter animated fadeInDownBig" [countUp]="25"
+                            [options]="{ enableScrollSpy: true }">25</span>K</h2>
+                    <h6>Travellers Around the World</h6>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="stat-item">
+                    <h2><span class="counter animated fadeInDownBig" [countUp]="09"
+                            [options]="{ enableScrollSpy: true }">09</span>+</h2>
+                    <h6>Routes Per Day</h6>
+                </div>
+            </div>
+            <!-- end col -->
+
+        </div>
+        <!-- end row -->
+    </div>
+</section>
+<!-- /Statistics Section -->
+
+
+<!-- Experts Section -->
+<section class="section adavantages-sec adavantages-sec-seven bg-light-200">
+    <div class="container">
+
+        <!-- start row -->
+        <div class="row align-items-center">
+
+            <div class="col-xl-6">
+                <div class="section-right-img d-none d-xl-block">
+                    <img src="assets/img/bus/about-img.png" alt="Img" class="img-fluid">
+                    <div class="percentage text-center">
+                        <h2 class="mb-1 text-white">10+</h2>
+                        <p class="text-white">Years of <span class="d-block">Experience</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-xl-6">
+                <div>
+                    <span class="text-primary fs-16 fw-medium mb-4 d-block">About Us</span>
+                    <h2 class="mb-4">Experience hassle-free travel with real <span class="d-block">time tracking and
+                            instant booking.</span></h2>
+                    <p>We are a team of dedicated professionals committed to delivering excellence through innovation,
+                        quality, and customer satisfaction. Our journey began with a simple vision — to make everyday
+                        experiences smarter, simpler, and more meaningful.
+                    </p>
+
+                    <!-- start row -->
+                    <div class="row mt-4 row-gap-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 mb-0">
+                                <div class="card-body">
+                                    <div
+                                        class="d-flex align-items-xxl-center gap-3 flex-wrap flex-xxl-nowrap flex-column flex-xxl-row">
+                                        <span class="avatar rounded-icon-md rounded-circle bg-purple flex-shrink-0"><i
+                                                class="isax isax-add5 fs-24"></i></span>
+                                        <div>
+                                            <h5 class="mb-2">Comfort & Safety</h5>
+                                            <p class="text-truncate line-clamb-3">Travel with verified operators and
+                                                clean buses.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-6">
+                            <div class="card border-0 mb-0">
+                                <div class="card-body">
+                                    <div
+                                        class="d-flex align-items-xxl-center gap-3 flex-wrap flex-xxl-nowrap flex-column flex-xxl-row">
+                                        <span class="avatar rounded-icon-md rounded-circle bg-orange flex-shrink-0">
+                                            <i class="isax isax-edit-25 fs-24"></i>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-2">Smart Travel Feature</h5>
+                                            <p class="text-truncate line-clamb-3">Real-time tracking ,updates & easy
+                                                cancellations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-6">
+                            <div class="card border-0 mb-0">
+                                <div class="card-body">
+                                    <div
+                                        class="d-flex align-items-xxl-center gap-3 flex-wrap flex-xxl-nowrap flex-column flex-xxl-row">
+                                        <span class="avatar rounded-icon-md rounded-circle bg-success flex-shrink-0">
+                                            <i class="isax isax-tick-circle5 fs-24"></i>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-2">Secure Payments</h5>
+                                            <p class="text-truncate line-clamb-3">Multiple payment options with full
+                                                data protection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-md-6">
+                            <div class="card border-0 mb-0">
+                                <div class="card-body">
+                                    <div
+                                        class="d-flex align-items-xxl-center gap-3 flex-wrap flex-xxl-nowrap flex-column flex-xxl-row">
+                                        <span class="avatar rounded-icon-md rounded-circle bg-teal flex-shrink-0">
+                                            <i class="isax isax-star5 fs-24"></i>
+                                        </span>
+                                        <div>
+                                            <h5 class="mb-2">Seamless Experience</h5>
+                                            <p class="text-truncate line-clamb-3">Simple, fast, and reliable booking
+                                                experience </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                    </div>
+                    <!-- end row -->
+
+                    <div class="d-flex align-items-center view-all">
+                        <a [routerLink]="routes.busDetails" class="btn btn-dark d-flex align-items-center gap-2">More
+                            About Us<i class="isax isax-arrow-right-3"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+</section>
+<!-- /Experts Section -->
+
+<!-- Support Section -->
+<section class="support-section support-sec-seven bg-primary overflow-hidden">
+    <div class="horizontal-slide d-flex" data-direction="left" data-speed="slow">
+        <div class="slide-list d-flex">
+            <div class="support-item">
+                <h5>Personalized Itineraries</h5>
+            </div>
+            <div class="support-item">
+                <h5>Comprehensive Planning</h5>
+            </div>
+            <div class="support-item">
+                <h5>Expert Guidance</h5>
+            </div>
+            <div class="support-item">
+                <h5>Local Experience</h5>
+            </div>
+            <div class="support-item">
+                <h5>Customer Support</h5>
+            </div>
+            <div class="support-item">
+                <h5>Sustainability Efforts</h5>
+            </div>
+            <div class="support-item">
+                <h5>Multiple Regions</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Support Section -->
+
+<!-- Routes Section -->
+<section class="section routes-sec-seven position-relative">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="mb-2 line-icon">Popular Routes</h2>
+            <p class="sub-title">Plan Your Next Journey with Our Top Bus Routes</p>
+        </div>
+
+        <!-- start row -->
+        <div class="row">
+            <div class="col-xl-7">
+                <div class="bus-list">
+
+                    <!-- Bus List 1 -->
+                    <div class="place-item mb-2">
+                        <div class="place-img">
+                            <a [routerLink]="routes.busDetails">
+                                <img src="assets/img/bus/bus-img-01.jpg" class="img-fluid" alt="img">
+                            </a>
+                        </div>
+                        <div class="place-content">
+                            <div class="bus-content">
+                                <div class="bus-title">
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Chicago</a>
+                                        </h5>
+                                        <p>09:30 AM</p>
+                                    </div>
+                                    <div class="dot-line">
+                                        <span>
+                                            <small class="text-muted">13h 10m</small>
+                                        </span>
+                                    </div>
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Miami</a>
+                                        </h5>
+                                        <p>10:40 PM</p>
+                                    </div>
+                                </div>
+                                <div class="bus-title-item">
+                                    <h6
+                                        class="d-flex align-items-center w-100 justify-content-between text-primary flex-md-column flex-row fs-18 fw-semibold gap-1">
+                                        $350
+                                        <span class="ms-1 fs-14 fw-normal text-gray-6">From</span>
+                                    </h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a [routerLink]="routes.busList" class="btn btn-dark btn-lg search-btn">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bus List 2 -->
+                    <div class="place-item mb-2">
+                        <div class="place-img">
+                            <a [routerLink]="routes.busDetails">
+                                <img src="assets/img/bus/bus-img-02.jpg" class="img-fluid" alt="img">
+                            </a>
+                        </div>
+                        <div class="place-content">
+                            <div class="bus-content">
+                                <div class="bus-title">
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Toronto</a>
+                                        </h5>
+                                        <p>08:25 PM</p>
+                                    </div>
+                                    <div class="dot-line">
+                                        <span>
+                                            <small class="text-muted">16h 25m</small>
+                                        </span>
+                                    </div>
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Bangkok</a>
+                                        </h5>
+                                        <p>104:45 PM</p>
+                                    </div>
+                                </div>
+                                <div class="bus-title-item">
+                                    <h6
+                                        class="d-flex align-items-center w-100 justify-content-between text-primary flex-md-column flex-row fs-18 fw-semibold gap-1">
+                                        $300
+                                        <span class="ms-1 fs-14 fw-normal text-gray-6">From</span>
+                                    </h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a [routerLink]="routes.busList" class="btn btn-dark btn-lg search-btn">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bus List 3 -->
+                    <div class="place-item mb-2">
+                        <div class="place-img">
+                            <a [routerLink]="routes.busDetails">
+                                <img src="assets/img/bus/bus-img-03.jpg" class="img-fluid" alt="img">
+                            </a>
+                        </div>
+                        <div class="place-content">
+                            <div class="bus-content">
+                                <div class="bus-title">
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Boston</a>
+                                        </h5>
+                                        <p>08:10 AM</p>
+                                    </div>
+                                    <div class="dot-line">
+                                        <span>
+                                            <small class="text-muted">12h 30m</small>
+                                        </span>
+                                    </div>
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Dallas</a>
+                                        </h5>
+                                        <p>08:40 PM</p>
+                                    </div>
+                                </div>
+                                <div class="bus-title-item">
+                                    <h6
+                                        class="d-flex align-items-center w-100 justify-content-between text-primary flex-md-column flex-row fs-18 fw-semibold gap-1">
+                                        $250
+                                        <span class="ms-1 fs-14 fw-normal text-gray-6">From</span>
+                                    </h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a [routerLink]="routes.busList" class="btn btn-dark btn-lg search-btn">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bus List 4 -->
+                    <div class="place-item mb-2">
+                        <div class="place-img">
+                            <a [routerLink]="routes.busDetails">
+                                <img src="assets/img/bus/bus-img-04.jpg" class="img-fluid" alt="img">
+                            </a>
+                        </div>
+                        <div class="place-content">
+                            <div class="bus-content">
+                                <div class="bus-title">
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Seattle</a>
+                                        </h5>
+                                        <p>05:50 PM</p>
+                                    </div>
+                                    <div class="dot-line">
+                                        <span>
+                                            <small class="text-muted">14h 45m</small>
+                                        </span>
+                                    </div>
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Denver</a>
+                                        </h5>
+                                        <p>08:35 AM</p>
+                                    </div>
+                                </div>
+                                <div class="bus-title-item">
+                                    <h6
+                                        class="d-flex align-items-center w-100 justify-content-between text-primary flex-md-column flex-row fs-18 fw-semibold gap-1">
+                                        $390
+                                        <span class="ms-1 fs-14 fw-normal text-gray-6">From</span>
+                                    </h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a [routerLink]="routes.busList" class="btn btn-dark btn-lg search-btn">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bus List 5 -->
+                    <div class="place-item">
+                        <div class="place-img">
+                            <a [routerLink]="routes.busDetails">
+                                <img src="assets/img/bus/bus-img-05.jpg" class="img-fluid" alt="img">
+                            </a>
+                        </div>
+                        <div class="place-content">
+                            <div class="bus-content">
+                                <div class="bus-title">
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Portland</a>
+                                        </h5>
+                                        <p>08:00 AM</p>
+                                    </div>
+                                    <div class="dot-line">
+                                        <span>
+                                            <small class="text-muted">16h 10m</small>
+                                        </span>
+                                    </div>
+                                    <div class="bus-title-item">
+                                        <h5 class="text-truncate mb-1">
+                                            <a href="javascript:void(0);">Orlando</a>
+                                        </h5>
+                                        <p>12:05 PM</p>
+                                    </div>
+                                </div>
+                                <div class="bus-title-item">
+                                    <h6
+                                        class="d-flex align-items-center w-100 justify-content-between text-primary flex-md-column flex-row fs-18 fw-semibold gap-1">
+                                        $650
+                                        <span class="ms-1 fs-14 fw-normal text-gray-6">From</span>
+                                    </h6>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <a [routerLink]="routes.busList" class="btn btn-dark btn-lg search-btn">
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-xl-5">
+                <div class="rountes-img d-none d-xl-block">
+                    <img src="assets/img/bus/routes-img-01.jpg" alt="img" class="img-fluid rounded">
+                </div>
+            </div>
+            <!-- end col -->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+    <img src="assets/img/bus/routes-img-02.png" alt="img" class="img-fluid element-one d-none">
+    <img src="assets/img/bus/routes-img-03.png" alt="img" class="img-fluid element-two d-none d-xl-block">
+</section>
+<!-- /Popular Section -->
+
+<!-- Countries Section -->
+<section class="section choose-sec-seven position-relative overflow-hidden">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="mb-2 text-white line-icon">Why Choose Us</h2>
+            <p class="sub-title text-white">Experience the best in bus travel with our premium services</p>
+        </div>
+
+        <!-- start row -->
+        <div class="row row-gap-4">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card border-0 mb-0">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <span class="avatar rounded-icon-md rounded-circle bg-success flex-shrink-0"><i
+                                    class="isax isax-calendar-add5 fs-24"></i></span>
+                            <div>
+                                <h5>Safe Travel</h5>
+                                <p class="text-truncate line-clamb-3">Travel safely with our verified and trusted
+                                    operators</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/bus/why-img-02.png" alt="img" class="img-fluid rounded why-img-one">
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="card border-0 mb-0">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <span
+                                class="avatar rounded-icon-md rounded-icon-md-1 rounded-circle bg-danger flex-shrink-0"><i
+                                    class="isax isax-headphone5 fs-24"></i></span>
+                            <div>
+                                <h5>24/7 Support</h5>
+                                <p class="text-truncate line-clamb-3">Round-the-clock customer support for your
+                                    convenience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/bus/why-img-02.png" alt="img" class="img-fluid rounded why-img-one">
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="card border-0 mb-0">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <span
+                                class="avatar rounded-icon-md rounded-icon-md-2 rounded-circle bg-purple flex-shrink-0"><i
+                                    class="isax isax-heart-edit5 fs-24"></i></span>
+                            <div>
+                                <h5>Easy Booking</h5>
+                                <p class="text-truncate line-clamb-3">Simple and quick booking process in just a few
+                                    clicks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/bus/why-img-02.png" alt="img" class="img-fluid rounded why-img-one">
+                </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="card border-0 mb-0">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <span
+                                class="avatar rounded-icon-md rounded-icon-md-3 rounded-circle bg-secondary flex-shrink-0"><i
+                                    class="isax isax-tag-user5 fs-24"></i></span>
+                            <div>
+                                <h5>Verified Operators</h5>
+                                <p class="text-truncate line-clamb-3">All of our bus operators are verified Licensed and
+                                    certified</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/bus/why-img-02.png" alt="img" class="img-fluid rounded why-img-one">
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+
+        <!-- start img -->
+        <div class="why-img d-none d-lg-block text-center">
+            <img src="assets/img/bus/why-img-01.png" alt="img" class="img-fluid">
+        </div>
+        <!-- end img -->
+    </div>
+
+    <div class="slide-section">
+        <div class="horizontal-slide d-flex" data-direction="left" data-speed="slow">
+            <div class="slide-list d-flex">
+                <div class="slide-item">
+                    <h3>EXPERT GUIDANCE</h3>
+                </div>
+                <div class="slide-item">
+                    <h3> ITINERARIES</h3>
+                </div>
+                <div class="slide-item">
+                    <h3>MULTIPLE REGIONS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Popular Section -->
+
+<!-- Countries Section -->
+<section class="section countries-sec-seven">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="mb-2 line-icon">Popular Connected Countries</h2>
+            <p class="sub-title">Explore Seamless Bus Connections Across Borders</p>
+        </div>
+
+        <!-- start row -->
+        <div class="row row-gap-3">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-01.svg" alt="img" class="img-fluid">
+                    <h6>Scotland</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-02.svg" alt="img" class="img-fluid">
+                    <h6>Niger</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-03.svg" alt="img" class="img-fluid">
+                    <h6>Slovenia</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-04.svg" alt="img" class="img-fluid">
+                    <h6>NetherLands</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-05.svg" alt="img" class="img-fluid">
+                    <h6>Singapore</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-06.svg" alt="img" class="img-fluid">
+                    <h6>Finland</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-07.svg" alt="img" class="img-fluid">
+                    <h6>Argentina</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-08.svg" alt="img" class="img-fluid">
+                    <h6>Croatia</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-09.svg" alt="img" class="img-fluid">
+                    <h6>Canada</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-10.svg" alt="img" class="img-fluid">
+                    <h6>England</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-11.svg" alt="img" class="img-fluid">
+                    <h6>Romania</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-12.svg" alt="img" class="img-fluid">
+                    <h6>Turkey</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-13.svg" alt="img" class="img-fluid">
+                    <h6>Peru</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-14.svg" alt="img" class="img-fluid">
+                    <h6>France</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-15.svg" alt="img" class="img-fluid">
+                    <h6>Sweden</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-16.svg" alt="img" class="img-fluid">
+                    <h6>Brazil</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-17.svg" alt="img" class="img-fluid">
+                    <h6>Kuwait</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="countries-item d-flex align-items-center gap-2">
+                    <img src="assets/img/icons/lang-18.svg" alt="img" class="img-fluid">
+                    <h6>Botswana</h6>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div>
+</section>
+<!-- /Countries Section -->
+
+<!-- Clients Section -->
+<section class="section clients-sec-seven bg-light">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="mb-2 line-icon">What Our Client Says</h2>
+            <p class="sub-title">Explore heartfelt stories from our satisfied travelers</p>
+        </div>
+
+        <!-- start row -->
+        <div class="row row-gap-3">
+            <div class="col-lg-4">
+                <!-- Testimonial Item-->
+                <div class="card border-light mb-0 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between text-center flex-column">
+                            <div class="rating d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                            </div>
+                            <p class="mb-4">
+                                Booking our dream cruise was incredibly easy with Dreams tour The interface was
+                                user-friendly, and I loved how i tell my it was a dream come true and itineraries at a
+                                glance.
+                            </p>
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="javascript:void(0);" class="avatar avatar-lg  flex-shrink-0">
+                                    <img src="assets/img/users/user-01.jpg" class="rounded-circle" alt="img">
+                                </a>
+                                <div class="text-start">
+                                    <h5 class="fw-semibold"><a href="javascript:void(0);">Andrew Miller</a></h5>
+                                    <span class="city-type">Illinois, United States</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0 me-2 d-none d-xxl-block">
+                        <i class="isax isax-quote-down5 fs-42 text-light"></i>
+                    </div>
+                </div>
+                <!-- /Testimonial Item-->
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Testimonial Item-->
+                <div class="card border-light mb-0 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between text-center flex-column">
+                            <div class="rating d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                            </div>
+                            <p class="mb-4">
+                                Finding the perfect bus was effortless and fast. The platform’s smart filters, clear
+                                route comparisons, my journey simple, organized, and completely hassle free from start
+                                to finish.
+                            </p>
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="javascript:void(0);" class="avatar avatar-lg  flex-shrink-0">
+                                    <img src="assets/img/users/user-06.jpg" class="rounded-circle" alt="img">
+                                </a>
+                                <div class="text-start">
+                                    <h5 class="fw-semibold"><a href="javascript:void(0);">Sarah Thompson</a></h5>
+                                    <span class="city-type">Texas, United States</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0 me-2 d-none d-xxl-block">
+                        <i class="isax isax-quote-down5 fs-42 text-light"></i>
+                    </div>
+                </div>
+                <!-- /Testimonial Item-->
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Testimonial Item-->
+                <div class="card border-light mb-0 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between text-center flex-column">
+                            <div class="rating d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                                <i class="fa-solid fa-star filled  text-primary me-1 fs-14"></i>
+                            </div>
+                            <p class="mb-4">
+                                he entire bus booking experience was seamless and stress free. I could easily browse
+                                schedules, check seat availability, with just a few clicks on a clean, user friendly
+                                site.
+                            </p>
+                            <div class="d-flex align-items-center gap-2">
+                                <a href="javascript:void(0);" class="avatar avatar-lg  flex-shrink-0">
+                                    <img src="assets/img/users/user-07.jpg" class="rounded-circle" alt="img">
+                                </a>
+                                <div class="text-start">
+                                    <h5 class="fw-semibold"><a href="javascript:void(0);">Daniel Roberts</a></h5>
+                                    <span class="city-type">Washington, United States</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute bottom-0 end-0 me-2 d-none d-xxl-block">
+                        <i class="isax isax-quote-down5 fs-42 text-light"></i>
+                    </div>
+                </div>
+                <!-- /Testimonial Item-->
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div>
+</section>
+<!-- /Countries Section -->
+
+<!-- Blogs Section -->
+<section class="section blogs-sec-seven">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="mb-2 line-icon">Blogs & Articles</h2>
+            <p class="sub-title">Explore Inspiring Travel Blogs and Useful Bus Travel Advice</p>
+        </div>
+
+        <!-- start row -->
+        <div class="row g-4 justify-content-center">
+
+            <!-- Blog Item-->
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="blog-item blog-wrap flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                    <a [routerLink]="routes.blogDetails" class="blog-img">
+                        <img src="assets/img/blog/blog-img-01.jpg" alt="img" class="img-fluid w-100">
+                        <span class="badge bg-primary text-white fs-14 fw-medium">Bookings</span>
+                    </a>
+                    <div class="blog-content">
+                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                            <a href="javascript:void(0);" class="d-flex align-items-center">
+                                <span class="avatar avatar-md flex-shrink-0 me-2">
+                                    <img src="assets/img/users/user-01.jpg" alt="img" class="rounded-circle">
+                                </span>
+                                <p class="fs-14">Merkel James</p>
+                            </a>
+                            <p class="fs-13 fw-medium d-flex align-items-center"><i
+                                    class="isax isax-calendar-1 text-gray-9 fs-20 me-2"></i>27 Sep 2025</p>
+                        </div>
+                        <h5><a [routerLink]="routes.blogDetails">Top Reasons to Choose Online Bus Booking for Your Next
+                                Trip</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- /Blog Item-->
+
+            <!-- Blog Item-->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-item blog-wrap flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                    <a [routerLink]="routes.blogDetails" class="blog-img">
+                        <img src="assets/img/blog/blog-img-02.jpg" alt="img" class="img-fluid w-100">
+                        <span class="badge bg-primary text-white fs-14 fw-medium">Bus Travel</span>
+                    </a>
+                    <div class="blog-content">
+                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                            <a href="javascript:void(0);" class="d-flex align-items-center">
+                                <span class="avatar avatar-md flex-shrink-0 me-2">
+                                    <img src="assets/img/users/user-02.jpg" alt="img" class="rounded-circle">
+                                </span>
+                                <p class="fs-14">Harriet Collins</p>
+                            </a>
+                            <p class="fs-13 fw-medium d-flex align-items-center"><i
+                                    class="isax isax-calendar-1 text-gray-9 fs-20 me-2"></i>27 Sep 2025</p>
+                        </div>
+                        <h5><a [routerLink]="routes.blogDetails">Smart Tips for a Comfortable and Hassle Free Bus Travel
+                                Experience</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- /Blog Item-->
+
+            <!-- Blog Item-->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-item blog-wrap flex-fill wow fadeInUp" data-wow-delay="0.2s">
+                    <a [routerLink]="routes.blogDetails" class="blog-img">
+                        <img src="assets/img/blog/blog-img-03.jpg" alt="img" class="img-fluid w-100">
+                        <span class="badge bg-primary text-white fs-14 fw-medium">Travel Tips</span>
+                    </a>
+                    <div class="blog-content">
+                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                            <a href="javascript:void(0);" class="d-flex align-items-center">
+                                <span class="avatar avatar-md flex-shrink-0 me-2">
+                                    <img src="assets/img/users/user-03.jpg" alt="img" class="rounded-circle">
+                                </span>
+                                <p class="fs-14">Rachel Mariscal</p>
+                            </a>
+                            <p class="fs-13 fw-medium d-flex align-items-center"><i
+                                    class="isax isax-calendar-1 text-gray-9 fs-20 me-2"></i>27 Sep 2025</p>
+                        </div>
+                        <h5><a [routerLink]="routes.blogDetails">How Online Bus Reservations Save Time and Reduce Travel
+                                Stress</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- /Blog Item-->
+
+        </div>
+        <!-- end row -->
+
+    </div>
+</section>
+<!-- /Blogs Section -->
+
+<!-- Subcribe section -->
+<section class="subscribe-sec-seven section">
+    <div class="container">
+        <div class="row justify-content-center row-gap-3">
+            <div class="col-lg-8 col-md-6">
+                <div class="section-header mb-0 text-center text-lg-start">
+                    <h2 class="text-white">Subscribe to Keep Updated</h2>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-input">
+                    <div class="input-group align-items-center justify-content-center">
+                        <span class="input-group-text px-1"><i class="isax isax-message-favorite5"></i></span>
+                        <input type="email" class="form-control" placeholder="Enter Email Address">
+                        <button type="submit" class="btn btn-primary btn-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Subcribe section -->
+
+<!-- Footer -->
+<footer class="footer-three footer-seven">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-6">
+                    <div class="footer-widget">
+                        <div class="footer-about">
+                            <div class="mb-4">
+                                <a [routerLink]="routes.index" class="d-inline-block mb-3">
+                                    <img src="assets/img/logo.svg" alt="logo">
+                                </a>
+                                <p>Our mission is to offer you a seamless and enjoyable car rental experience. Whether
+                                    you’re planning a road trip</p>
+                                <ul class="social-icon mt-3">
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa-brands fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa-brands fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa-brands fa-pinterest"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6">
+                    <div class="row row-cols-md-2 row-cols-sm-2 row-cols-1 row-gap-3">
+                        <div class="col">
+                            <div class="footer-widget mb-0">
+                                <h5>Company</h5>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a [routerLink]="routes.aboutUs">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="routes.blogGrid">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Affiliate Program</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="routes.addBus">Add Your Listing</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Our Partners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer-widget mb-0">
+                                <h5>Destinations</h5>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="javascript:void(0);">Hawai</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Istanbul</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">San Diego</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Belgium</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Newyork</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Los Angeles</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 ">
+                    <p class="text-lg-start text-center">Copyright &copy; 2025. All Rights Reserved, <a
+                            href="javascript:void(0);" class="text-white fw-medium">DreamsTour</a></p>
+                </div>
+                <div class="col-md-5">
+                    <ul class="policy-links justify-content-lg-end gap-2">
+                        <li>
+                            <a [routerLink]="routes.privacyPolicy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="routes.termsConditions">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer Bottom -->
+
+</footer>
+<!-- /Footer -->

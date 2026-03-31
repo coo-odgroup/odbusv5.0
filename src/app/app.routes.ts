@@ -5,7 +5,7 @@ export const routes: Routes = [
   //Auth Routes//
   {
     path:'',
-    redirectTo:'index',
+    redirectTo:'',
     pathMatch:'full'
   },
   { path: 'login', loadComponent: () => import('./auth/login/login.component').then((m) => m.LoginComponent) },
@@ -17,18 +17,24 @@ export const routes: Routes = [
 { path: 'error-500', loadComponent: () => import('./auth/error-500/error-500.component').then((m) => m.Error500Component) },
 { path: 'error-404', loadComponent: () => import('./auth/error-404/error-404.component').then((m) => m.Error404Component) },
 
+//  {
+//     path: '', loadComponent: () => import('./home/home.component').then((m) => m.HomeComponent),
+//     children: []
+//  },
+
   
   //Features Routes//
   {
     path: '', loadComponent: () => import('./features/features.component').then((m) => m.FeaturesComponent),
     children: [
-      { path: 'index', loadComponent: () => import('./features/home-pages/home/home.component').then((m) => m.HomeComponent) },
+      { path: '', loadComponent: () => import('./home/home.component').then((m) => m.HomeComponent) },
+      // { path: '', loadComponent: () => import('./home/home.component').then((m) => m.HomeComponent) },
       { path: 'index-2', loadComponent: () => import('./features/home-pages/home-2/home-2.component').then((m) => m.Home2Component) },
       { path: 'index-3', loadComponent: () => import('./features/home-pages/home-3/home-3.component').then((m) => m.Home3Component) },
       { path: 'index-4', loadComponent: () => import('./features/home-pages/home-4/home-4.component').then((m) => m.Home4Component) },
       { path: 'index-5', loadComponent: () => import('./features/home-pages/home-5/home-5.component').then((m) => m.Home5Component) },
       { path: 'index-6', loadComponent: () => import('./features/home-pages/home-6/home-6.component').then((m) => m.Home6Component) },
-      { path: 'index-7', loadComponent: () => import('./features/home-pages/home-7/home-7.component').then((m) => m.Home7Component) },
+      // { path: 'index-7', loadComponent: () => import('./features/home-pages/home-7/home-7.component').then((m) => m.Home7Cohomemponent) },
       { path: 'flight', loadComponent: () => import('./features/flight/flight.component').then((m) => m.FlightComponent),
         children:[
           { path: 'flight-list', loadComponent: () => import('./features/flight/flight-list/flight-list.component').then(m => m.FlightListComponent) },
