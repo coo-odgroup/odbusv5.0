@@ -1568,4 +1568,83 @@ color: #ffffff !important;
     cursor: pointer;
 }
 
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .seat-main-card {
+        flex-direction: column;
+    }
+
+    .seat-left {
+        transform: rotate(90deg);
+        transform-origin: top left;
+        position: relative;
+
+        /* IMPORTANT FIX */
+        left: 100%;
+        width: 100vh;
+        height: auto;
+    }
+
+    .bus-layout {
+        width: 600px;
+    }
+
+    .booking-info-card {
+        width: 100%;
+    }
+}
+
+
+/* TOP OFFER BAR */
+.top-offer-bar {
+    width: 100%;
+    background: linear-gradient(90deg, #f5e6c8, #c7d6e5);
+    padding: 10px 15px;
+    position: relative;
+    z-index: 10;
+}
+
+
+body:has(.top-offer-bar) .main-header {
+    margin-top: 45px;
+}
+
+/* TOP OFFER BAR END */
+
+// .navbar-logo img {
+//     height: 40px;
+//     object-fit: contain;
+// }
+
+
+/* ===================== */
+/* DEFAULT (TOP - WHITE) */
+/* ===================== */
+
+/* Account text + icon */
+.profile-dropdown .nav-link,
+.profile-dropdown .nav-link i {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+
+/* ===================== */
+/* ON SCROLL (BLUE MODE) */
+/* ===================== */
+
+/* VERY IMPORTANT (your project uses 'fixed' not 'fixed-header') */
+.fixed .profile-dropdown .nav-link,
+.fixed .profile-dropdown .nav-link i {
+    color: #1b2155;
+}
+
+.fixed .profile-dropdown .nav-link,
+.fixed .profile-dropdown .nav-link{
+  font-weight: 500;
+}
+
 

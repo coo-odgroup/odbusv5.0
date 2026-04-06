@@ -1,0 +1,46 @@
+span.text-primary{
+    color: #f0c92f !important;
+}
+
+.custom-btn {
+    padding: 4px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* TODAY (Yellow Border) */
+.btn-today {
+    border: 1px solid #f0c92f;
+    color: #4E5561;
+}
+
+.btn-today:hover {
+    background: #f0c92f;
+    color: #fff;
+}
+
+/* TOMORROW (Blue Border) */
+.btn-tomorrow {
+    border: 1px solid #1b2155;
+    color: #4E5561;
+}
+
+.btn-tomorrow:hover {
+    background: #1b2155;
+    color: #fff;
+}
+
+button.btn.btn-primary.search-btn.rounded{
+    background: #f0c92f !important;
+    color: #1b2155 !important;
+    border: none !important;
+}
+
+span.way-icon.badge.badge-primary.rounded-pill.translate-middle{
+    background: #f0c92f !important;
+    color: #1b2155 !important;
+}

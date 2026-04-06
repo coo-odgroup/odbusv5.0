@@ -11220,8 +11220,8 @@ header .main-menu-wrapper .main-nav li.login-link {
 }
 header .header-btn .btn {
   font-size: 13px;
-  border-radius: 55px;
-  padding: 7px 12px;
+  border-radius: 4px;
+  padding: 3px 12px;
   margin-right: 12px;
 }
 header .header-btn .btn.btn-white:hover {

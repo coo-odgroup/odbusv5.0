@@ -6,7 +6,7 @@
 ============================*/
 
 .hero-sec-seven {
-    height: 690px;
+    height: 540px;
     display: flex;
     align-items: center;
     @include mixins.respond-below(xxl) {
@@ -69,7 +69,7 @@
         .slider-fors {
             .slick-slide {
                 img {
-                    height: 775px;
+                    height: 540px;
                     object-fit: unset;
                     border-radius: 0;
                     @include mixins.respond-below(xxl) {
@@ -93,7 +93,8 @@
 // Banner Section
 .banner-sec-seven {
     .banner-form {
-        margin: -74px 0px 0px 0px;
+        // margin: -74px 0px 0px 0px;
+        margin: -65px 0px 0px 0px;
         position: relative;
         z-index: 11;
     }

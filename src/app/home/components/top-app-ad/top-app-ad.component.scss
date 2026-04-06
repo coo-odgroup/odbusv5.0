@@ -1,0 +1,72 @@
+.top-offer-bar {
+    width: 100%;
+    background: linear-gradient(90deg, #f5e6c8, #c2d8f4);
+    padding: 10px 15px;
+    position: relative;
+    z-index: 9999;
+}
+
+.offer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.offer-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.offer-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+}
+
+.offer-text small {
+    color: #555;
+    margin-left: 5px;
+}
+
+.install-btn {
+    background: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.close-offer {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    /* PERFECT CIRCLE BASE */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.close-offer:hover {
+    background: rgba(0, 0, 0, 0.1);
+}

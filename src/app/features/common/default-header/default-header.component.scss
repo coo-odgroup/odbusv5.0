@@ -1,0 +1,45 @@
+/* Ensure anchor positioning */
+.main-nav > li > a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* ⭐ ONLY HOME ACTIVE BAR */
+.main-nav > li:first-child > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #ffd600;
+    border-radius: 2px;
+}
+
+/* LOGIN BUTTON (dark) */
+.login-btn {
+    background: #1b2155;
+    color: #fff;
+    border-radius: 5px !important;
+    padding: 3px 14px !important;
+    font-weight: 600;
+}
+
+/* SIGNUP BUTTON (yellow) */
+.signup-btn {
+    background: #ffd600;
+    color: #000;
+    border-radius: 5px !important;
+    padding: 3px 14px !important;
+    font-weight: 600;
+}
+
+/* HOVER EFFECT */
+.login-btn:hover {
+    background: #151a45;
+}
+
+.signup-btn:hover {
+    background: #ffcc00;
+}

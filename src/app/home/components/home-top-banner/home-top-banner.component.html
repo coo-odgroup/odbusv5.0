@@ -2,15 +2,15 @@
     <div class="banner-sliders">
         <div class="slider-wrap home-vertical-slider">
             <div class="slider-fors nav-center slick-initialized slick-slider" id="large-img">
-                <div class="slick-list draggable">                    
-                        <div class="slick-slide slick-current slick-active">
-                            <div>
-                                <div class="service-img">
-                                    <img src="assets/img/bus/bus-slider-01.png" class="img-fluid" alt="Slider Img">
-                                </div>
+                <div class="slick-list draggable">
+                    <div class="slick-slide slick-current slick-active">
+                        <div>
+                            <div class="service-img">
+                                <img src="assets/img/home_banner_new.jpg" class="img-fluid" alt="Slider Img">
                             </div>
                         </div>
-                   
+                    </div>
+
                 </div>
 
 
@@ -80,7 +80,7 @@
                     </li>
                 </ul>
             </div> -->
-            
+
             <div class="card-body">
                 <div>
                     <div class="tab-content">
@@ -225,7 +225,7 @@
                                                     [bsConfig]="{ adaptivePosition: true }" placeholder="21-10-2024"
                                                     [bsValue]="bsValue"
                                                     [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" />
-                                                <p class="fs-12 mb-0">Monday</p>
+                                                <!-- <p class="fs-12 mb-0">Monday</p> -->
                                             </div>
                                             <div class="form-item round-drip"
                                                 [ngStyle]="{'display':isChecked2?'block':'none'}">
@@ -1195,7 +1195,7 @@
                         </div>
                         <div class="tab-pane fade active show" id="Bus">
                             <form (ngSubmit)="onSubmit6()">
-                                <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                <!-- <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
                                     <div class="d-flex align-items-center">
                                         <div class="form-check d-flex align-items-center me-3 mb-2">
                                             <input class="form-check-input mt-0" type="radio" name="tripType"
@@ -1211,7 +1211,7 @@
                                         </div>
                                     </div>
                                     <h6 class="fw-medium fs-16 mb-2">Low cost Buses in One simple search</h6>
-                                </div>
+                                </div> -->
                                 <div class="normal-trip"
                                     [ngStyle]="{'display':isChecked8?'none':isChecked7?'block':''}">
                                     <div class="d-lg-flex">
@@ -1219,9 +1219,11 @@
                                             <div class="form-item dropdown">
                                                 <div data-bs-toggle="dropdown" data-bs-auto-close="outside"
                                                     aria-expanded="false" role="menu">
-                                                    <label class="form-label fs-14 text-default mb-1">From</label>
+                                                    <label class="form-label fs-14 text-default mb-1">
+                                                        <i class="fa-solid fa-location-dot me-1"></i> From
+                                                    </label>
                                                     <input type="text" class="form-control" value="Newyork">
-                                                    <p class="fs-12 mb-0">USA</p>
+                                                    <!-- <p class="fs-12 mb-0">USA</p> -->
                                                 </div>
                                                 <div class="dropdown-menu dropdown-md p-0">
                                                     <div class="input-search p-3 border-bottom">
@@ -1269,9 +1271,11 @@
                                             <div class="form-item dropdown ps-2 ps-sm-3">
                                                 <div data-bs-toggle="dropdown" data-bs-auto-close="outside"
                                                     aria-expanded="false" role="menu">
-                                                    <label class="form-label fs-14 text-default mb-1">To</label>
+                                                    <label class="form-label fs-14 text-default mb-1">
+                                                        <i class="fa-solid fa-location-dot me-1"></i> To
+                                                    </label>
                                                     <h5>Las Vegas</h5>
-                                                    <p class="fs-12 mb-0">USA</p>
+                                                    <!-- <p class="fs-12 mb-0">USA</p> -->
                                                     <span
                                                         class="way-icon badge badge-primary rounded-pill translate-middle">
                                                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -1320,13 +1324,38 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="form-item">
+                                            <!-- <div class="form-item">
                                                 <label class="form-label fs-14 text-default mb-1">Departure</label>
                                                 <input type="text" class="form-control datetimepicker" bsDatepicker
                                                     [bsConfig]="{ adaptivePosition: true }" placeholder="21-10-2024"
                                                     [bsValue]="bsValue"
                                                     [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" />
                                                 <p class="fs-12 mb-0">Monday</p>
+                                            </div> -->
+
+                                            <div class="form-item">
+                                                <label class="form-label fs-14 text-default mb-1">
+                                                    <i class="fa-regular fa-calendar me-1"></i> Departure
+                                                </label>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <!-- DATE TEXT -->
+                                                    <input type="text" class="form-control datetimepicker" bsDatepicker
+                                                        [bsConfig]="{ adaptivePosition: true }" placeholder="21-10-2024"
+                                                        [bsValue]="bsValue"
+                                                        [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" />
+                                                    <!-- BUTTONS RIGHT SIDE -->
+                                                    <div class="d-flex gap-2">
+                                                        <button type="button" class="custom-btn btn-today">
+                                                            Today
+                                                        </button>
+                                                        <button type="button" class="custom-btn btn-tomorrow">
+                                                            Tomorrow
+                                                        </button>
+                                                    </div>
+
+                                                </div>
                                             </div>
                                             <div class="form-item round-drip">
                                                 <label class="form-label fs-14 text-default mb-1">Return</label>
@@ -1334,7 +1363,7 @@
                                                     value="23-10-2024">
                                                 <p class="fs-12 mb-0">Wednesday</p>
                                             </div>
-                                            <div class="form-item dropdown">
+                                            <!-- <div class="form-item dropdown">
                                                 <div data-bs-toggle="dropdown" data-bs-auto-close="outside"
                                                     aria-expanded="false" role="menu">
                                                     <label class="form-label fs-14 text-default mb-1">Travellers</label>
@@ -1408,7 +1437,7 @@
                                                             class="btn btn-primary btn-sm">Apply</button>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <button type="submit" class="btn btn-primary search-btn rounded">Search</button>
                                     </div>
@@ -1527,7 +1556,7 @@
                                                     [bsConfig]="{ adaptivePosition: true }" placeholder="21-10-2024"
                                                     [bsValue]="bsValue"
                                                     [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" />
-                                                <p class="fs-12 mb-0">Monday</p>
+                                                <!-- <p class="fs-12 mb-0">Monday</p> -->
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary search-btn rounded">Search</button>

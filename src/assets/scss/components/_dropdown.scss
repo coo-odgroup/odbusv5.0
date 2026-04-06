@@ -80,8 +80,10 @@
     &:hover,
     &:focus,
     &:active {
-      color: variables.$white;
-      background-color: variables.$primary;
+      // color: variables.$white;
+      // background-color: variables.$primary;
+      color: #1b2155 !important;
+      background-color: #f0c92f !important;
       border-radius: 5px;
     }
   }

@@ -15,7 +15,7 @@
     box-shadow: variables.$box-shadow;
     color: inherit;
     .card-body {
-        padding: 1.25rem;
+        // padding: 1.25rem;
         @include mixins.respond-below(md) {
           padding: 16px;
         }

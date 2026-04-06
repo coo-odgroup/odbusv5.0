@@ -110,12 +110,28 @@
     }
 
   }
+  // .hero-sec-content{
+  //   position: absolute;
+  //   top: 0;
+  //   padding-top: 114px;
+  //   margin:0 calc(50% - 635px)
+  // }
+
   .hero-sec-content{
-    position: absolute;
-    top: 0;
-    padding-top: 114px;
-    margin:0 calc(50% - 635px)
-  }
+  position: absolute;
+  top: 0;
+  padding-top: 60px; /* 🔥 reduce height */
+  margin:0 calc(50% - 635px)
+}
+
+.hero-sec-content{
+  position: absolute;
+  top: 0;
+  padding-top: 60px; /* 🔥 reduce height */
+  margin:0 calc(50% - 635px)
+}
+
+  
 
   .offer-sliders{
     .owl-theme {
