@@ -4,6 +4,9 @@ import { CORE_MODULES } from '../shared/shared-import';
 import { routes } from '../shared/routes/routes';
 import { TopAppAdComponent } from './components/top-app-ad/top-app-ad.component';
 import { HomeTopBannerComponent } from './components/home-top-banner/home-top-banner.component';
+import { RecentSearchComponent } from './components/recent-search/recent-search.component';
+import { BusFestiveOfferComponent } from './components/bus-festive-offer/bus-festive-offer.component';
+
 
 
 @Component({
@@ -11,7 +14,10 @@ import { HomeTopBannerComponent } from './components/home-top-banner/home-top-ba
   standalone: true,
   imports: [
     ...CORE_MODULES,  
-    TopAppAdComponent,HomeTopBannerComponent
+    TopAppAdComponent,
+    HomeTopBannerComponent,
+    RecentSearchComponent,
+    BusFestiveOfferComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
