@@ -6,6 +6,9 @@ import { TopAppAdComponent } from './components/top-app-ad/top-app-ad.component'
 import { HomeTopBannerComponent } from './components/home-top-banner/home-top-banner.component';
 import { RecentSearchComponent } from './components/recent-search/recent-search.component';
 import { BusFestiveOfferComponent } from './components/bus-festive-offer/bus-festive-offer.component';
+import { WhyBookOdbusComponent } from './components/why-book-odbus/why-book-odbus.component';
+import { BusOffersComponent } from './components/bus-offers/bus-offers.component';
+
 
 
 
@@ -17,7 +20,9 @@ import { BusFestiveOfferComponent } from './components/bus-festive-offer/bus-fes
     TopAppAdComponent,
     HomeTopBannerComponent,
     RecentSearchComponent,
-    BusFestiveOfferComponent
+    BusFestiveOfferComponent,
+    WhyBookOdbusComponent,
+    BusOffersComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
