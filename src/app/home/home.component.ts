@@ -8,6 +8,10 @@ import { RecentSearchComponent } from './components/recent-search/recent-search.
 import { BusFestiveOfferComponent } from './components/bus-festive-offer/bus-festive-offer.component';
 import { WhyBookOdbusComponent } from './components/why-book-odbus/why-book-odbus.component';
 import { BusOffersComponent } from './components/bus-offers/bus-offers.component';
+import { TopCitiesComponent } from './components/top-cities/top-cities.component';
+import { PopularRoutesComponent } from './components/popular-routes/popular-routes.component';
+
+
 
 @Component({
   selector: 'app-home',
@@ -19,7 +23,10 @@ import { BusOffersComponent } from './components/bus-offers/bus-offers.component
     RecentSearchComponent,
     BusFestiveOfferComponent,
     WhyBookOdbusComponent,
-    BusOffersComponent
+    BusOffersComponent,
+    TopCitiesComponent,
+    PopularRoutesComponent
+
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
