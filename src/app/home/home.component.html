@@ -9,119 +9,266 @@
 <!-- Popular Section -->
 <section class="section popular-sec-seven">
     <div class="container">
-        <div class="section-header text-center">
-            <h2 class="mb-2 line-icon">Popular Destinations</h2>
-            <p class="sub-title">Explore our most traveled destinations around the World</p>
+        <div class="section-header custom-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="mb-2 line-icon">Popular Cities</h2>
+                <a href="#" class="view-all-link">View All ▶</a>
+            </div>
+            <p class="sub-title">Explore our most traveled destinations around the Cities</p>
         </div>
 
         <!-- start row -->
-        <div
+        <div class="city-wrapper">
+
+            <!-- SCROLL CONTAINER -->
+            <div class="city-container" #scrollContainer (scroll)="checkScroll()">
+
+                <div class="city-row">
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/bhubaneswar.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Bhubaneswar</a></h5>
+                                    <p class="fs-14">49 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/bhubaneswar.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Bhubaneswar</a></h5>
+                                    <p class="fs-14">49 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/koraput.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Koraput</a></h5>
+                                    <p class="fs-14">36 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end col -->
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/malkangiri.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Malkangiri</a></h5>
+                                    <p class="fs-14">49 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <!-- end col -->
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/malkangiri.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Malkangiri</a></h5>
+                                    <p class="fs-14">49 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/jeypur.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Jeypur</a></h5>
+                                    <p class="fs-14">18 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+
+                    <div class="col">
+                        <div class="location-item mb-0">
+                            <div class="location-img">
+                                <a [routerLink]="routes.busList" class="location-img">
+                                    <img src="assets/img/bus/rourkela.jpg" alt="img" class="img-fluid w-100">
+                                </a>
+                                <a href="javascript:void(0);" class="location-view"><i
+                                        class="isax isax-arrow-right-1"></i></a>
+                            </div>
+                            <div class="location-info text-center">
+                                <div>
+                                    <h5 class="mb-1"><a [routerLink]="routes.busList">Rourkela</a></h5>
+                                    <p class="fs-14">40 Buses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ✅ BUTTONS OUTSIDE ROW -->
+            <button *ngIf="showLeft" class="scroll-btn left" (click)="scrollLeft()">❮</button>
+            <button *ngIf="showRight" class="scroll-btn right" (click)="scrollRight()">❯</button>
+
+        </div>
+        <!-- <div
             class="row row-gap-4 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-1 row-margin justify-content-center">
             <div class="col">
                 <div class="location-item mb-0">
                     <div class="location-img">
                         <a [routerLink]="routes.busList" class="location-img">
-                            <img src="assets/img/bus/popular-img-01.jpg" alt="img" class="img-fluid w-100">
+                            <img src="assets/img/bus/bhubaneswar.jpg" alt="img" class="img-fluid w-100">
                         </a>
                         <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
                     </div>
                     <div class="location-info text-center">
                         <div>
-                            <h5 class="mb-1"><a [routerLink]="routes.busList">Belgium</a></h5>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Bhubaneswar</a></h5>
                             <p class="fs-14">49 Buses</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col">
                 <div class="location-item mb-0">
                     <div class="location-img">
                         <a [routerLink]="routes.busList" class="location-img">
-                            <img src="assets/img/bus/popular-img-02.jpg" alt="img" class="img-fluid w-100">
+                            <img src="assets/img/bus/koraput.jpg" alt="img" class="img-fluid w-100">
                         </a>
                         <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
                     </div>
                     <div class="location-info text-center">
                         <div>
-                            <h5 class="mb-1"><a [routerLink]="routes.busList">Brazil</a></h5>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Koraput</a></h5>
                             <p class="fs-14">36 Buses</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col">
                 <div class="location-item mb-0">
                     <div class="location-img">
                         <a [routerLink]="routes.busList" class="location-img">
-                            <img src="assets/img/bus/popular-img-03.jpg" alt="img" class="img-fluid w-100">
+                            <img src="assets/img/bus/malkangiri.jpg" alt="img" class="img-fluid w-100">
                         </a>
                         <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
                     </div>
                     <div class="location-info text-center">
                         <div>
-                            <h5 class="mb-1"><a [routerLink]="routes.busList">Mexico</a></h5>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Malkangiri</a></h5>
                             <p class="fs-14">49 Buses</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col">
                 <div class="location-item mb-0">
                     <div class="location-img">
                         <a [routerLink]="routes.busList" class="location-img">
-                            <img src="assets/img/bus/popular-img-04.jpg" alt="img" class="img-fluid w-100">
+                            <img src="assets/img/bus/jeypur.jpg" alt="img" class="img-fluid w-100">
                         </a>
                         <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
                     </div>
                     <div class="location-info text-center">
                         <div>
-                            <h5 class="mb-1"><a [routerLink]="routes.busList">Greece</a></h5>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Jeypur</a></h5>
                             <p class="fs-14">18 Buses</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col">
                 <div class="location-item mb-0">
                     <div class="location-img">
                         <a [routerLink]="routes.busList" class="location-img">
-                            <img src="assets/img/bus/popular-img-05.jpg" alt="img" class="img-fluid w-100">
+                            <img src="assets/img/bus/rourkela.jpg" alt="img" class="img-fluid w-100">
                         </a>
                         <a href="javascript:void(0);" class="location-view"><i class="isax isax-arrow-right-1"></i></a>
                     </div>
                     <div class="location-info text-center">
                         <div>
-                            <h5 class="mb-1"><a [routerLink]="routes.busList">Netherlands</a></h5>
+                            <h5 class="mb-1"><a [routerLink]="routes.busList">Rourkela</a></h5>
                             <p class="fs-14">40 Buses</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end col -->
 
-        </div>
-        <!-- end row -->
+        </div> -->
 
-        <div class="text-center view-all wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+        <!-- <div class="text-center view-all wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <a [routerLink]="routes.busList" class="btn btn-dark">View All Destinations<i
                     class="isax isax-arrow-right-3 ms-2"></i></a>
-        </div>
+        </div> -->
     </div>
 </section>
 <!-- /Popular Section -->
 
 <!-- Statistics Section -->
-<section class="section stat-sec-seven pt-0">
+<!-- <section class="section stat-sec-seven pt-0">
     <div class="container">
-        <!-- start row -->
         <div class="row justify-content-center row-gap-3">
             <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="stat-item">
@@ -130,7 +277,6 @@
                     <h6>Happy Customers</h6>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="stat-item">
@@ -139,7 +285,6 @@
                     <h6>Successfully Completed Tours</h6>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="stat-item">
@@ -148,7 +293,6 @@
                     <h6>Travellers Around the World</h6>
                 </div>
             </div>
-            <!-- end col -->
 
             <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="stat-item">
@@ -157,12 +301,10 @@
                     <h6>Routes Per Day</h6>
                 </div>
             </div>
-            <!-- end col -->
 
         </div>
-        <!-- end row -->
     </div>
-</section>
+</section> -->
 <!-- /Statistics Section -->
 
 

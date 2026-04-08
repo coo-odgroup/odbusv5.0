@@ -1,0 +1,200 @@
+/* MAIN CARD */
+.bus-offer-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 50px !important;
+}
+
+/* LEFT SIDE */
+.bus-offer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* HEADING WITH IMAGE */
+.bus-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bus-heading img {
+    width: 65px;
+    height: auto;
+}
+
+/* TEXT */
+.bus-heading h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b2155;
+}
+
+.bus-heading p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: #777;
+}
+
+/* DEAL */
+.bus-offer-deal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.bus-offer-deal span {
+    font-size: 14px;
+}
+
+.bus-offer-deal b {
+    color: green;
+}
+
+/* MONTH */
+.bus-months {
+    display: flex;
+    gap: 10px;
+}
+
+.month-box {
+    width: 110px;
+    height: 45px;
+    border: 1px solid #1b2155;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6px 8px;
+    gap: 2px;
+}
+
+.month-box a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.month-box strong {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.month-box small {
+    font-size: 11px;
+    color: #888;
+    line-height: 1.1;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ACTIVE */
+.month-box.active {
+    border: 1px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, #ff4ecd, #4c5fff) border-box;
+}
+
+/* RIGHT */
+.bus-offer-right {
+    text-align: right;
+}
+
+.bus-offer-right button {
+    background: #f0c92f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #1b2155;
+}
+
+.bus-offer-right small {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #777;
+}
+
+.book-btn {
+    display: inline-block;
+    background: #f0c92f;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #1b2155;
+    text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    /* CARD CENTER */
+    .bus-offer-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 14px;
+    }
+
+    /* DEAL CENTER */
+    .bus-offer-deal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* MONTH CENTER */
+    .bus-months {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .month-box {
+        width: 110px;
+        height: 45px;
+    }
+
+    /* BUTTON FIX (NOT FULL WIDTH) */
+    .bus-offer-right {
+        margin-top: 5px;
+    }
+
+    .bus-offer-right button {
+        width: auto;
+        padding: 10px 22px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .month-box {
+        width: 90px;
+    }
+}

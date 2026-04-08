@@ -1,1 +1,35 @@
-<p>bus-offers works!</p>
+<div class="container mt-4">
+  <section class="offer-section">
+    <div class="offer-header">
+      <h2>Bus Booking Discount Offer</h2>
+      <a href="#">View All ▶</a>
+    </div>
+
+    <div class="offer-wrapper mt-3">
+      <!-- LEFT ARROW -->
+      <button class="scroll-btn left" *ngIf="showLeft" (click)="scrollLeft()">❮</button>
+      <div class="offer-container" #scrollContainer (scroll)="onScroll()">
+
+        <a class="offer-card" href="#">
+          <img src="assets/img/1st_coupon.png" alt="Offer 1">
+        </a>
+
+        <a class="offer-card" href="#">
+          <img src="assets/img/1st_coupon.png" alt="Offer 2">
+        </a>
+
+        <a class="offer-card" href="#">
+          <img src="assets/img/1st_coupon.png" alt="Offer 3">
+        </a>
+
+        <a class="offer-card" href="#">
+          <img src="assets/img/1st_coupon.png" alt="Offer 4">
+        </a>
+
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="scroll-btn right" (click)="scrollRight()">❯</button>
+    </div>
+  </section>
+</div>

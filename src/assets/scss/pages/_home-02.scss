@@ -23,19 +23,19 @@
         .slick-track {
             display: flex;
         }
-        .service-img {
-            width: 100% !important;
-            opacity: 1 !important;
-            &::after {
-                content: "";
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-        }
+        // .service-img {
+        //     width: 100% !important;
+        //     opacity: 1 !important;
+        //     &::after {
+        //         content: "";
+        //         background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+        //         width: 100%;
+        //         height: 100%;
+        //         position: absolute;
+        //         left: 0;
+        //         top: 0;
+        //     }
+        // }
         .slick-slide img {
             width: 100%;
             height: 615px;

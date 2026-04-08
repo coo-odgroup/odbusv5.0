@@ -112,24 +112,25 @@
     h2 {
         position: relative;
         margin-bottom: 12px !important;
+        color: #1b2155;
     }
-    .line-icon {
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -8px;
-            margin: auto;
-            width: 35px;
-            height: 4px;
-            background: url(../../../../public/assets/img/icons/line-icon.svg);
-            background-size: 100% 100%;
-            @include mixins.respond-below(md) {
-                display: none;
-            }
-        }
-    }
+    // .line-icon {
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         left: 0;
+    //         right: 0;
+    //         bottom: -8px;
+    //         margin: auto;
+    //         width: 35px;
+    //         height: 4px;
+    //         background: url(../../../../public/assets/img/icons/line-icon.svg);
+    //         background-size: 100% 100%;
+    //         @include mixins.respond-below(md) {
+    //             display: none;
+    //         }
+    //     }
+    // }
 }
 
 // Popular Section
@@ -149,8 +150,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: variables.$primary;       
-                color: variables.$white;
+                // background: variables.$primary;       
+                // color: variables.$white;
+                background: rgba(255, 255, 255, 0.8117647059);       
+                color: #1b2155;
                 border-radius: 50%;
                 position: absolute;
                 inset: 0;
@@ -167,7 +170,8 @@
             .location-view {
                 transform: scale(1);
                 &:hover {
-                    background: variables.$danger;
+                    // background: variables.$danger;
+                    background: #fff7d6;
                 }
             }
         }

@@ -11,6 +11,9 @@ span.text-primary{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.form-item .form-control {
+    color: #1b2155 !important;
+}
 
 /* TODAY (Yellow Border) */
 .btn-today {
@@ -43,4 +46,32 @@ button.btn.btn-primary.search-btn.rounded{
 span.way-icon.badge.badge-primary.rounded-pill.translate-middle{
     background: #f0c92f !important;
     color: #1b2155 !important;
+}
+
+/* SMALL MOBILE FIX (320–375px) */
+@media (max-width: 375px) {
+
+    /* keep input + buttons in same row */
+    .form-item .d-flex {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    /* make buttons compact */
+    .custom-btn {
+        padding: 2px 8px;
+        font-size: 11px;
+        border-radius: 14px;
+        white-space: nowrap; /* prevent text break */
+    }
+
+    /* reduce gap */
+    .form-item .d-flex > div {
+        gap: 4px;
+    }
+
+    /* slightly shrink date input */
+    .form-item input.form-control {
+        font-size: 16px;
+    }
 }

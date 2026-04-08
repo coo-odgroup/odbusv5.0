@@ -1,0 +1,165 @@
+/* RECENT SEARCH SECTION */
+.recent-search-wrapper {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+}
+
+/* HEADING */
+.recent-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b2155;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.recent-title::before {
+    content: "";
+    width: 4px;
+    height: 16px;
+    background: #f0c92f;
+    border-radius: 2px;
+}
+
+/* ROW */
+.recent-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+/* BOX */
+.recent-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* ICON (REPLACED BAR) */
+.recent-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    background: #fff7d6;
+    color: #f0c92f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 12px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+/* CONTENT */
+.recent-content span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1b2155;
+    line-height: 1.4;
+}
+
+.recent-content small {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* HOVER */
+.recent-box:hover {
+    border-color: #1b2155;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+}
+
+.recent-box:hover .recent-icon {
+    background: #f0c92f;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+/* TABLET */
+@media (max-width: 992px) {
+    .recent-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+      .recent-box,
+    .recent-icon {
+        transition: none !important;
+    }
+
+    .recent-box:hover {
+        transform: none; /* remove lift effect */
+        box-shadow: none; /* optional: remove shadow animation */
+    }
+}
+
+/* MOBILE (BEST UX) */
+@media (max-width: 768px) {
+    .recent-row {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 5px;
+        scroll-behavior: smooth;
+    }
+
+    /* hide scrollbar (clean UI) */
+    .recent-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .recent-row {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .recent-box {
+        min-width: 220px;
+        /* card size */
+        flex: 0 0 auto;
+    }
+      .recent-box,
+    .recent-icon {
+        transition: none !important;
+    }
+
+    .recent-box:hover {
+        transform: none; /* remove lift effect */
+        box-shadow: none; /* optional: remove shadow animation */
+    }
+}
+
+/* Better spacing on small screens */
+@media (max-width: 576px) {
+    .recent-box {
+        padding: 10px;
+    }
+
+    .recent-content span {
+        font-size: 13px;
+    }
+
+    .recent-content small {
+        font-size: 10px;
+    }
+      .recent-box,
+    .recent-icon {
+        transition: none !important;
+    }
+
+    .recent-box:hover {
+        transform: none; /* remove lift effect */
+        box-shadow: none; /* optional: remove shadow animation */
+    }
+}
