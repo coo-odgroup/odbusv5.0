@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CORE_MODULES } from '../shared/shared-import';
 import { routes } from '../shared/routes/routes';
@@ -10,8 +10,6 @@ import { WhyBookOdbusComponent } from './components/why-book-odbus/why-book-odbu
 import { BusOffersComponent } from './components/bus-offers/bus-offers.component';
 import { TopCitiesComponent } from './components/top-cities/top-cities.component';
 import { PopularRoutesComponent } from './components/popular-routes/popular-routes.component';
-
-
 
 @Component({
   selector: 'app-home',
@@ -26,12 +24,11 @@ import { PopularRoutesComponent } from './components/popular-routes/popular-rout
     BusOffersComponent,
     TopCitiesComponent,
     PopularRoutesComponent
-
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent {
 
   public routes = routes;
 
@@ -52,7 +49,7 @@ export class HomeComponent implements AfterViewInit {
   public isClassAdded: boolean[] = [false];
   public isSelected: boolean[] = [false];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   // ================= ROUTES =================
   onSubmit(): void {
@@ -148,38 +145,6 @@ export class HomeComponent implements AfterViewInit {
 
   selectClass(index: number): void {
     this.isSelected[index] = !this.isSelected[index];
-  }
-
-  // ================= 🔥 SCROLL LOGIC =================
-
-  @ViewChild('scrollContainer') scrollContainer!: ElementRef;
-
-  showLeft = false;
-  showRight = true;
-
-  ngAfterViewInit() {
-    this.checkScroll();
-  }
-
-  scrollLeft() {
-    const el = this.scrollContainer.nativeElement;
-    el.scrollBy({ left: -300, behavior: 'smooth' });
-
-    setTimeout(() => this.checkScroll(), 300);
-  }
-
-  scrollRight() {
-    const el = this.scrollContainer.nativeElement;
-    el.scrollBy({ left: 300, behavior: 'smooth' });
-
-    setTimeout(() => this.checkScroll(), 300);
-  }
-
-  checkScroll() {
-    const el = this.scrollContainer.nativeElement;
-
-    this.showLeft = el.scrollLeft > 5;
-    this.showRight = el.scrollLeft + el.clientWidth < el.scrollWidth - 5;
   }
 
 }

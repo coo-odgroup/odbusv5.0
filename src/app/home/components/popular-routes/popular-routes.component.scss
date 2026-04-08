@@ -1,0 +1,85 @@
+.custom-header {
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  color: #1b2155;
+}
+
+.routes-wrapper {
+    padding: 5px 0 20px 0;
+}
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.view-all-link{
+    color: #1b2155;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.route-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid #f1f1f1;
+    display: grid;
+    grid-template-columns: 9fr 3fr; /* 🔥 9 / 3 layout */
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.25s ease;
+}
+
+.route-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid #1b215586;
+    background: #fff7d6;
+}
+
+/* TEXT */
+.route-text {
+    font-weight: 600;
+    color: #1b2155;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* BUTTON FULL WIDTH IN ITS AREA */
+.book-btn {
+    width: 100%; /* 🔥 fill 3-part space */
+    background: #ffd600;
+    border: none;
+    padding: 6px 0;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.book-btn:hover {
+    background: #ffcc00;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+    .routes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .routes-grid {
+        grid-template-columns: 1fr;
+    }
+}
